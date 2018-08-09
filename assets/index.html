@@ -6,9 +6,16 @@
 	<link rel="icon" type="image/png" href="images/favicon.png">
 	<!-- Stylesheets
 	============================================= -->
-    <?php
-    wp_head();
-    ?>
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Document Title
@@ -90,18 +97,69 @@
 
 					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-                    <?php
-                    
-                        if(has_nav_menu( 'primary' )){
-                            wp_nav_menu( array(
-                                'theme_location' => 'primary',
-                                'container' => false,
-                                'fallback_cb' => false,
-                                'depth' => 4,
-                            ) );
-                        }
-                    
-                    ?>
+					<ul>
+						<li><a href="index.html"><div>Menu Item 1</div></a>
+							<ul>
+								<li><a href="#"><div>Submenu Item 1</div></a>
+									<ul>
+										<li><a href="#"><div>Submenu Item 1</div></a></li>
+										<li><a href="#"><div>Submenu Item 2</div></a></li>
+									</ul>
+								</li>
+								<li><a href="#"><div>Submenu Item 2</div></a>
+									<ul>
+										<li><a href="#"><div>Submenu Item 1</div></a></li>
+										<li><a href="#"><div>Submenu Item 2</div></a></li>
+									</ul>
+								</li>
+								<li><a href="#"><div>Submenu Item 3</div></a></li>
+								<li><a href="#"><div>Submenu Item 4</div></a></li>
+							</ul>
+						</li>
+						<li><a href="index.html"><div>Menu Item 2</div></a>
+							<ul>
+								<li><a href="#"><div>Submenu Item 1</div></a>
+									<ul>
+										<li><a href="#"><div>Submenu Item 1</div></a></li>
+										<li><a href="#"><div>Submenu Item 2</div></a></li>
+									</ul>
+								</li>
+								<li><a href="#"><div>Submenu Item 2</div></a>
+									<ul>
+										<li><a href="#"><div>Submenu Item 1</div></a></li>
+										<li><a href="#"><div>Submenu Item 2</div></a></li>
+									</ul>
+								</li>
+								<li><a href="#"><div>Submenu Item 3</div></a></li>
+								<li><a href="#"><div>Submenu Item 4</div></a></li>
+							</ul>
+						</li>
+						<li><a href="#"><div>Menu Item 3</div></a>
+							<ul>
+								<li><a href="#"><div>Submenu Item 1</div></a>
+									<ul>
+										<li><a href="#"><div>Submenu Item 1</div></a>
+											<ul>
+												<li><a href="#"><div>Submenu Item 1</div></a></li>
+												<li><a href="#"><div>Submenu Item 2</div></a></li>
+												<li><a href="#"><div>Submenu Item 3</div></a></li>
+											</ul>
+										</li>
+										<li><a href="#"><div>Submenu Item 2</div></a></li>
+										<li><a href="#"><div>Submenu Item 3</div></a></li>
+									</ul>
+								</li>
+								<li><a href="#"><div>Submenu Item 2</div></a>
+									<ul>
+										<li><a href="#"><div>Submenu Item 1</div></a></li>
+										<li><a href="#"><div>Submenu Item 2</div></a></li>
+									</ul>
+								</li>
+								<li><a href="#"><div>Submenu Item 3</div></a></li>
+							</ul>
+						</li>
+						<li><a href="#">Menu Item 4</a></li>
+					</ul>
 
 					<!-- Top Cart
 						============================================= -->
@@ -387,7 +445,12 @@
 
 <!-- External JavaScripts
 ============================================= -->
-<?php wp_footer()?>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+
+<!-- Footer Scripts
+============================================= -->
+<script type="text/javascript" src="js/functions.js"></script>
 
 </body>
 </html>
